@@ -1,0 +1,10 @@
+{
+  "name": "eslint-config-interactivethings",
+  "version": "1.0.0-alpha.1",
+  "description": "The Interactive Things JavaScript Styleguide",
+  "keywords": [
+    "eslint",
+    "eslintconfig"
+  ],
+  "main": "index.js"
+}
