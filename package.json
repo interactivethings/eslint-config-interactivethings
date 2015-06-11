@@ -1,10 +1,18 @@
 {
   "name": "eslint-config-interactivethings",
   "version": "1.0.0-alpha.1",
-  "description": "The Interactive Things JavaScript Styleguide",
+  "description": "The Interactive Things ESLint config",
+  "repository": "https://github.com/interactivethings/eslint-config-interactivethings",
   "keywords": [
     "eslint",
     "eslintconfig"
   ],
-  "main": "index.js"
+  "author": "Jeremy Stucki",
+  "main": "index.js",
+  "peerDependencies": {
+    "babel-eslint": "^3.1.15",
+    "eslint": "^0.22.1",
+    "eslint-plugin-react": "^2.5.0"
+  },
+  "license": "BSD"
 }
