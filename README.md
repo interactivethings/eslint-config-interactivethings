@@ -20,6 +20,7 @@ Override any rules which don't fit your project.
 
 - JSX single quotes
 - Capitalized functions don't need to be used with `new`. E.g. `const foo = Immutable.Map();` should be allowed.
+- Allows the `__DEV__` global
 
 ## Development
 

@@ -3,6 +3,9 @@ module.exports = {
   'plugins': [
     'react'
   ],
+    "globals": {
+    "__DEV__": true
+  },
   'env': {
     'browser': true,
     'node': true
