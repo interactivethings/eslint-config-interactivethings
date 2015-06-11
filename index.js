@@ -197,6 +197,7 @@ module.exports = {
         'displayName',
         'mixins',
         'statics',
+        'contextTypes',
         'propTypes',
         'getDefaultProps',
         'getInitialState',
@@ -206,7 +207,7 @@ module.exports = {
         'shouldComponentUpdate',
         'componentWillUpdate',
         'componentWillUnmount',
-        '/^on.+$/',
+        '/^(on|handle).+$/',
         '/^get.+$/',
         '/^render.+$/',
         'render'
