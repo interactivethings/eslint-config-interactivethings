@@ -1,5 +1,20 @@
 # Interactive Things ESLint Config
 
+## Usage
+
+```shell
+npm install eslint-config-interactivethings --save-dev
+```
+
+In your project's `.eslintrc`:
+
+```json
+{
+  "extends": "interactivethings"
+}
+```
+
+Override any rules which don't fit your project.
 
 ## Differences to AirBnB config
 
