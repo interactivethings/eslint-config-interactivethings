@@ -1,5 +1,7 @@
 # Interactive Things ESLint Config
 
+We (mostly) structure and lint our JS code according to [AirBnB's JavaScript styleguide](https://github.com/airbnb/javascript). Exceptions are noted below.
+
 ## Usage
 
 ```shell
