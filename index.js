@@ -3,8 +3,8 @@ module.exports = {
   'plugins': [
     'react'
   ],
-    "globals": {
-    "__DEV__": true
+  'globals': {
+    '__DEV__': true
   },
   'env': {
     'browser': true,
