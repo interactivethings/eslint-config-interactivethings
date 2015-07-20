@@ -199,6 +199,7 @@ module.exports = {
         'statics',
         'contextTypes',
         'propTypes',
+        'constructor',
         'getDefaultProps',
         'getInitialState',
         'componentWillMount',
