@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-interactivethings",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "The Interactive Things ESLint config",
   "repository": "https://github.com/interactivethings/eslint-config-interactivethings",
   "keywords": [
