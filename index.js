@@ -207,6 +207,7 @@ module.exports = {
         'componentWillReceiveProps',
         'shouldComponentUpdate',
         'componentWillUpdate',
+        'componentDidUpdate',
         'componentWillUnmount',
         '/^(on|handle).+$/',
         '/^get.+$/',
