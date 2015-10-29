@@ -176,7 +176,7 @@ module.exports = {
  */
     'react/display-name': 0,
     'react/jsx-boolean-value': 2,
-    'react/jsx-quotes': [2, 'single'],
+    'jsx-quotes': [2,'prefer-single'],
     'react/jsx-no-undef': 2,
     'react/jsx-sort-props': 0,
     'react/jsx-sort-prop-types': 0,
