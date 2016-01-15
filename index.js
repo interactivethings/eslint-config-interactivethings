@@ -182,6 +182,7 @@ module.exports = {
     'react/jsx-sort-prop-types': 0,
     'react/jsx-uses-react': 2,
     'react/jsx-uses-vars': 2,
+    'react/jsx-no-duplicate-props': 2, // explodes with strict mode in IE
     'react/no-did-mount-set-state': [2, 'allow-in-func'],
     'react/no-did-update-set-state': 2,
     'react/no-multi-comp': 2,
