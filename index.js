@@ -185,7 +185,9 @@ module.exports = {
     'react/jsx-no-duplicate-props': 2, // explodes with strict mode in IE
     'react/no-did-mount-set-state': [2, 'allow-in-func'],
     'react/no-did-update-set-state': 2,
-    'react/no-multi-comp': 2,
+    'react/no-multi-comp': [2, {     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-multi-comp.md#ignorestateless
+        'ignoreStateless': true
+    }],
     'react/no-unknown-property': 2,
     'react/prop-types': 2,
     'react/react-in-jsx-scope': 2,
