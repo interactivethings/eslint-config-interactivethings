@@ -159,6 +159,7 @@ module.exports = {
     'no-underscore-dangle': 0,       // http://eslint.org/docs/rules/no-underscore-dangle
     'one-var': [2, 'never'],         // http://eslint.org/docs/rules/one-var
     'padded-blocks': [2, 'never'],   // http://eslint.org/docs/rules/padded-blocks
+    'object-curly-spacing': [2, 'never'],
     'semi': [2, 'always'],           // http://eslint.org/docs/rules/semi
     'semi-spacing': [2, {            // http://eslint.org/docs/rules/semi-spacing
       'before': false,
