@@ -1,5 +1,4 @@
 module.exports = {
-  'parser': 'babel-eslint',
   'plugins': [
     'react'
   ],
@@ -7,26 +6,17 @@ module.exports = {
     '__DEV__': true
   },
   'env': {
-    'browser': true,
-    'node': true
+    'shared-node-browser': true,
+    'es6': true,
   },
-  'ecmaFeatures': {
-    'arrowFunctions': true,
-    'blockBindings': true,
-    'classes': true,
-    'defaultParams': true,
-    'destructuring': true,
-    'forOf': true,
-    'generators': false,
-    'modules': true,
-    'objectLiteralComputedProperties': true,
-    'objectLiteralDuplicateProperties': false,
-    'objectLiteralShorthandMethods': true,
-    'objectLiteralShorthandProperties': true,
-    'spread': true,
-    'superInFunctions': true,
-    'templateStrings': true,
-    'jsx': true
+  'parserOptions': {
+    'ecmaVersion': 6,
+    'sourceType': 'module',
+    'ecmaFeatures': {
+      'experimentalObjectRestSpread': true,
+      'jsx': true
+    },
+    
   },
   'rules': {
 /**
@@ -129,7 +119,7 @@ module.exports = {
       'allowSingleLine': true
     }],
     'quotes': [
-      2, 'single', 'avoid-escape'    // http://eslint.org/docs/rules/quotes
+      2, 'single', {'avoidEscape': true, 'allowTemplateLiterals': true}    // http://eslint.org/docs/rules/quotes
     ],
     'camelcase': [2, {               // http://eslint.org/docs/rules/camelcase
       'properties': 'never'
@@ -164,11 +154,10 @@ module.exports = {
       'before': false,
       'after': true
     }],
-    'space-after-keywords': 2,       // http://eslint.org/docs/rules/space-after-keywords
+    'keyword-spacing': 2,       // http://eslint.org/docs/rules/keyword-spacing
     'space-before-blocks': 2,        // http://eslint.org/docs/rules/space-before-blocks
     'space-before-function-paren': [2, 'never'], // http://eslint.org/docs/rules/space-before-function-paren
     'space-infix-ops': 2,            // http://eslint.org/docs/rules/space-infix-ops
-    'space-return-throw-case': 2,    // http://eslint.org/docs/rules/space-return-throw-case
     'spaced-comment': [2, 'always'],        // http://eslint.org/docs/rules/spaced-comment
 
 /**
