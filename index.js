@@ -1,32 +1,28 @@
 module.exports = {
-  'parser': 'babel-eslint',
+  'extends': [
+    'eslint:recommended',
+    'plugin:react/recommended'
+  ],
   'plugins': [
     'react'
   ],
   'globals': {
-    '__DEV__': true
+    '__DEV__': true,
+    '__webpack_public_path__': true
   },
   'env': {
     'browser': true,
-    'node': true
+    'node': true,
+    'es6': true,
   },
-  'ecmaFeatures': {
-    'arrowFunctions': true,
-    'blockBindings': true,
-    'classes': true,
-    'defaultParams': true,
-    'destructuring': true,
-    'forOf': true,
-    'generators': false,
-    'modules': true,
-    'objectLiteralComputedProperties': true,
-    'objectLiteralDuplicateProperties': false,
-    'objectLiteralShorthandMethods': true,
-    'objectLiteralShorthandProperties': true,
-    'spread': true,
-    'superInFunctions': true,
-    'templateStrings': true,
-    'jsx': true
+  'parserOptions': {
+    'ecmaVersion': 6,
+    'sourceType': 'module',
+    'ecmaFeatures': {
+      'experimentalObjectRestSpread': true,
+      'jsx': true
+    },
+    
   },
   'rules': {
 /**
@@ -129,7 +125,7 @@ module.exports = {
       'allowSingleLine': true
     }],
     'quotes': [
-      2, 'single', 'avoid-escape'    // http://eslint.org/docs/rules/quotes
+      2, 'single', {'avoidEscape': true, 'allowTemplateLiterals': true}    // http://eslint.org/docs/rules/quotes
     ],
     'camelcase': [2, {               // http://eslint.org/docs/rules/camelcase
       'properties': 'never'
@@ -164,59 +160,26 @@ module.exports = {
       'before': false,
       'after': true
     }],
-    'space-after-keywords': 2,       // http://eslint.org/docs/rules/space-after-keywords
+    'object-curly-spacing': [2, 'never'],
+    'keyword-spacing': 2,       // http://eslint.org/docs/rules/keyword-spacing
     'space-before-blocks': 2,        // http://eslint.org/docs/rules/space-before-blocks
     'space-before-function-paren': [2, 'never'], // http://eslint.org/docs/rules/space-before-function-paren
     'space-infix-ops': 2,            // http://eslint.org/docs/rules/space-infix-ops
-    'space-return-throw-case': 2,    // http://eslint.org/docs/rules/space-return-throw-case
     'spaced-comment': [2, 'always'],        // http://eslint.org/docs/rules/spaced-comment
 
 /**
  * JSX style
  */
+    'jsx-quotes': [2, 'prefer-single'],
     'react/display-name': 0,
     'react/jsx-boolean-value': 2,
-    'jsx-quotes': [2,'prefer-single'],
-    'react/jsx-no-undef': 2,
-    'react/jsx-sort-props': 0,
-    'react/jsx-sort-prop-types': 0,
-    'react/jsx-uses-react': 2,
-    'react/jsx-uses-vars': 2,
-    'react/jsx-no-duplicate-props': 2, // explodes with strict mode in IE
-    'react/no-did-mount-set-state': [2, 'allow-in-func'],
-    'react/no-did-update-set-state': 2,
     'react/no-multi-comp': [2, {     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-multi-comp.md#ignorestateless
         'ignoreStateless': true
     }],
-    'react/no-unknown-property': 2,
-    'react/prop-types': 2,
-    'react/react-in-jsx-scope': 2,
     'react/self-closing-comp': 2,
     'react/wrap-multilines': 2,
     'react/sort-comp': [2, {
-      'order': [
-        'displayName',
-        'mixins',
-        'statics',
-        'contextTypes',
-        'propTypes',
-        'constructor',
-        'getDefaultProps',
-        'defaultProps',
-        'getInitialState',
-        'state',
-        'componentWillMount',
-        'componentDidMount',
-        'componentWillReceiveProps',
-        'shouldComponentUpdate',
-        'componentWillUpdate',
-        'componentDidUpdate',
-        'componentWillUnmount',
-        '/^(on|handle).+$/',
-        '/^get.+$/',
-        '/^render.+$/',
-        'render'
-      ]
+      'order': ['lifecycle', 'everything-else', 'render']
     }]
   }
 };
