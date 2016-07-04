@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-interactivethings",
-  "version": "3.0.0-beta.4",
+  "version": "3.0.0",
   "description": "The Interactive Things ESLint config",
   "repository": "https://github.com/interactivethings/eslint-config-interactivethings",
   "keywords": [
